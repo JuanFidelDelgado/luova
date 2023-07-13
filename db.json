@@ -2,9 +2,9 @@
   "productos": [
     {
       "portada": "C:\\Users\\adora\\Documents\\Proyectos\\Alura\\FrontEnd\\Challenge-Luova\\assets\\img\\collar1.jpg",
-      "titulo": "Tokyo Ghoul",
+      "titulo": "Aretes 1000",
       "categoria": "Aretes",
-      "precio": "12",
+      "precio": "1000",
       "descripcion": "Los habitantes de Tokio viven aterrados: en las sombras de la metrópolis se ocultan horribles monstruos que se camuflan entre la multitud, cazando y devorando seres humanos. Un joven se topa con uno de estos ghouls, pero aunque consigue sobrevivir, su existencia ya no será igual…",
       "id": "687dc623-78f3-41e7-bea4-bb05334662fa"
     },

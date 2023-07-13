@@ -23,17 +23,17 @@ const obtenerProducto = async () => {
             titulo.value = producto.titulo;
             precio.value = producto.precio;
             for (let i = 0; i < categorias.length; i++) {
-                if(categorias[i].value == producto.categoria){
+                if (categorias[i].value == producto.categoria) {
                     categorias[i].setAttribute('selected', '')
-                }   
+                }
             }
             detalle.value = producto.descripcion;
 
-        } else{
+        } else {
             throw new Error();
         }
     } catch (error) {
-        
+
     }
 }
 
@@ -44,13 +44,10 @@ const categoria = document.querySelector('[data-categoria]');
 const obtenerCategoria = () => categoria.value;
 categoria.addEventListener('change', obtenerCategoria)
 
-
-
-formulario.addEventListener('submit', async (e) =>{
+formulario.addEventListener('submit', async (e) => {
     e.preventDefault();
     const url = new URL(window.location);
     const id = url.searchParams.get("id");
-
     const portada = document.querySelector('[data-imagen]').value;
     const titulo = document.querySelector('[data-titulo]').value;
     const categoria = obtenerCategoria();
@@ -59,10 +56,10 @@ formulario.addEventListener('submit', async (e) =>{
 
     const confirmacion = await sweetAlert.mensaje("Producto editado correctamente", "success", "#b8c995");
     if (confirmacion) {
-        productosServicios.actualizarProducto(portada,titulo,categoria,precio,detalle, id)
-        .then(() =>{
-            window.location.href = "../../admin/admin.html";
-        })
+        productosServicios.actualizarProducto(portada, titulo, categoria, precio, detalle, id)
+            .then(() => {
+                window.location.href = "../../admin/admin.html";
+            })
     }
 })
 
@@ -75,7 +72,7 @@ function mensaje(title, icon) {
             showConfirmButton: false,
             timer: 1500,
             timerProgressBar: true
-          }).then((result) => {
+        }).then((result) => {
             resolve(result);
         })
     })

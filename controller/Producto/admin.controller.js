@@ -1,4 +1,3 @@
-
 import { productosServicios } from '../../services/producto-services.js';
 import { sweetAlert } from '../../assets/js/sweetAlert.js';
 
@@ -20,12 +19,12 @@ productosServicios.listaProductos().then((data) => {
         fragment.appendChild(clone);
     })
     cardsProducto.appendChild(fragment);
-    
+
 }).catch(() => alert('Salio un error'))
 
 
 
-cardsProducto.addEventListener('click', e =>{
+cardsProducto.addEventListener('click', e => {
     e.preventDefault();
     eliminar(e);
     editar(e);
@@ -35,9 +34,9 @@ const eliminar = async (e) => {
     if (e.target.dataset.delete == "delete") {
         const id = e.target.dataset.id;
         const confirmacion = await sweetAlert.confirmar(
-            "Confirmar", "¿Seguro que deseas borrar este producto?","question", "#dcc55f");
+            "Confirmar", "¿Seguro que deseas borrar este producto?", "question", "#dcc55f");
         if (confirmacion) {
-            productosServicios.eliminarProducto(id).then(() => {}).catch(() => alert('Ocurrio un error'));
+            productosServicios.eliminarProducto(id).then(() => { }).catch(() => alert('Ocurrio un error'));
         }
     }
 }
@@ -45,7 +44,7 @@ const eliminar = async (e) => {
 const editar = (e) => {
     if (e.target.dataset.edit == "edit") {
         const id = e.target.dataset.id;
-        window.location.href ='../../admin/editar-producto.html?id='+id;
+        window.location.href = '../../admin/editar-producto.html?id=' + id;
     }
 }
 
