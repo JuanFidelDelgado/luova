@@ -1,0 +1,31 @@
+@import url("./rodapie-menu.css");
+@import url("./rodapie-info.css");
+
+.rodapie {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.rodapie-menu--logo {
+  width: 50%;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .rodapie {
+    flex-direction: row;
+    gap: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .rodapie {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+}

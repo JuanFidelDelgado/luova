@@ -1,0 +1,65 @@
+@import url("./nav-logo.css");
+@import url("./nav-boton.css");
+@import url("./nav-buscar.css");
+
+.nav {
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 100;
+}
+
+.nav-contenido {
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-start;
+  gap: 20px;
+  height: 100px;
+}
+
+.nav-contenido img {
+  border-radius: 50%;
+}
+
+.nav-grupo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  transition: all 3s ease;
+}
+
+.nav-scrolled {
+  background: #191c1c;
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .nav-contenido {
+    height: 130px;
+  }
+
+  .nav-grupo {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .nav-contenido {
+    padding-left: 20px;
+    height: 180px;
+  }
+
+  .nav-grupo {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}

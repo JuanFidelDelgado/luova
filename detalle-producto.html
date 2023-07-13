@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luova | Detalle producto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS REMIX -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ESTILOS DE LA PÁGINA -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/base/base.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/base/variables.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/nav/nav.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/portada.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/categorias/categorias.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/categoria.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/detalle/detalle.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/form-rodapie.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/rodapie/rodapie.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <section class="nav-contenido contenedor">
+                <a href="#"><img class="nav-logo" src="../assets/img/Luova_logo1.jpeg" alt="Logo Luova"></a>
+                <div class="nav-grupo">
+                    <a href="../index.html" class="nav-boton">
+                        <i class="ri-login-box-line"> </i> Salir
+                    </a>
+                    <form class="nav-buscar">
+                        <input class="nav-buscar--input" type="search" placeholder="Buscar">
+                        <a class="nav-buscar--btn" href="#">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </form>
+                </div>
+            </section>
+        </nav>
+        <section class="portada">
+            <img class="portada--img" src="../assets/img/banner_productos.jpg" alt="portada de productos">
+        </section>
+    </header>
+    <main>
+        <section class="detalle" id="detalleProducto"></section>
+
+        <template id="templateDetaProducto">
+            <picture class="detalle-banner">
+                <img src="./assets/img/naruto.webp" alt="imagen del producto" class="detalle-banner--img" data-imagen>
+            </picture>
+            <div class="detalle-producto contenedor">
+                <img src="./assets/img/naruto.webp" alt="imagen del producto" class="detalle-producto--cover"
+                    data-cover>
+                <div class="info-detalle-producto">
+                    <h1 class="detalle-producto--titulo" data-titulo>Producto XYZ</h1>
+                    <p class="detalle-producto--precio" data-precio>$ <span>60.00</span></p>
+                    <p class="detalle-producto--descripcion" data-descripcion>Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+            </div>
+        </template>
+
+        <section class="categorias contenedor">
+            <div class="categorias-cabecera">
+                <h2 class="categorias-cabecera--titulo">Productos similares</h2>
+            </div>
+
+            <div class="categorias-cards" id="listaProductos"></div>
+
+            <template id="templateListaProductos">
+                <article class="categoria">
+                    <img class="categoria--portada" src="./assets/img/onepice.webp" alt="One Piece" data-portada>
+                    <h3 class="categoria--titulo" data-titulo>One Piece</h3>
+                    <p class="categoria--precio" data-precio>$<span>60,00</span></p>
+                    <p class="categoria--id" data-id>#<span>1</span>
+                    </p>
+                    <a class="categoria--vinculo" href="#" data-detalle="detalle"><i class="ri-book-2-fill"></i>Ver
+                        producto
+                    </a>
+                </article>
+            </template>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodapie contenedor">
+            <nav class="rodapie-menu ">
+                <img class="rodapie-menu--logo" src="./assets/img/Luova_logo1.jpeg" alt="Logo">
+                <ul class="rodapie-menu--items">
+                    <li class="rodapie-menu--link">Quienes somos</li>
+                    <li class="rodapie-menu--link">Nuestras tiendas</li>
+                    <li class="rodapie-menu--link">Nuestros productos</li>
+                    <li class="rodapie-menu--link">Anúncie aquí</li>
+                </ul>
+            </nav>
+            <form class="form-rodapie">
+                <h3 class="form-rodapie--titulo">Hable con nosotros</h3>
+                <div class="inputs">
+                    <input data-tipo="name" class="inputs--input" type="text" placeholder="Nombre:" required
+                        pattern="([A-Za-z])\w+" title="Escribe solo letras.">
+                    <span class="input--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <textarea data-tipo="message" class="inputs--textarea" type="text" placeholder="Mensaje:"
+                        required></textarea>
+                    <span class="input--mensaje"></span>
+                </div>
+                <button class="form-rodapie--boton boton" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+        <section class="rodapie-info">
+            <p class="rodapie-info--parrafo">Desarrollado por: Juan Delgado</p>
+            <p class="rodapie-info--parrafo">Desarrollador Front-end</p>
+            <p class="rodapie-info--parrafo">2023</p>
+        </section>
+    </footer>
+
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./controller/Producto/detalle.controller.js" type="module"></script>
+</body>
+
+</html>

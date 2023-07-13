@@ -1,0 +1,39 @@
+.nav-buscar {
+  background-color: var(--transparency-color);
+  height: 40px;
+  line-height: 40px;
+  display: inline-flex;
+  padding-inline: 10px;
+  border: var(--border-button);
+  box-shadow: var(--box-shadow-button);
+}
+
+.nav-buscar--input {
+  background: transparent;
+  border: 0;
+  border-radius: 40%;
+  outline: none;
+  color: var(--tertiary-color);
+  width: 100px;
+}
+
+.nav-buscar--btn {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.ri-search-line {
+  font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .nav-buscar--input {
+    width: 270px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-buscar--input {
+    width: 400px;
+  }
+}

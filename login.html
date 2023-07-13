@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luova | Joyería artesanal</title>
+
+    <!-- FUENTES DE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- ICONOS REMIX -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- ESTILOS DE LA PÁGINA -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/base/base.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/base/variables.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/nav/nav.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/portada.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/form-login.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/form-rodapie.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/rodapie/rodapie.css">
+</head>
+
+<body>
+    <!--
+    <header>
+        <nav class="nav">
+            <section class="nav-contenido contenedor">
+                <a href="#"><img class="nav-logo" src="./assets/img/Luova_logo1.jpeg" alt="Logo Luova"></a>
+                <div class="nav-grupo">
+                    <form class="nav-buscar">
+                        <input class="nav-buscar--input" type="search" placeholder="Buscar">
+                        <a class="nav-buscar--btn" href="#">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </form>
+                </div>
+            </section>
+        </nav>
+    </header>
+    -->
+    <main>
+        <section class="login--img">
+            <img class="logo--login" src="./assets/img/Luova_logo1.jpeg" alt="Logo Luova"></a>
+        </section>
+        <section class="form contenedor">
+            <form class="form-login " id="formulario" method="">
+                <h1 class="form-login--titulo">Iniciar Sesión</h1>
+                <div class="inputs">
+                    <input class="inputs--input" type="email" placeholder="Ingresa tu correo electrónico" id="txtemail"
+                        data-tipo="email" required>
+                    <span class="input--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <input class="inputs--input" type="password" placeholder="Ingresa tu contraseña" id="txtpass"
+                        data-tipo="pass" required>
+                    <span class="input--mensaje"></span>
+                </div>
+                <button class="form-login--boton boton" id="btnLogin" type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodapie contenedor">
+            <nav class="rodapie-menu ">
+                <img class="rodapie-menu--logo" src="./assets/img/Luova_logo1_grande.jpeg" alt="Logo">
+                <ul class="rodapie-menu--items">
+                    <li class="rodapie-menu--link">Quienes somos</li>
+                    <li class="rodapie-menu--link">Nuestras tiendas</li>
+                    <li class="rodapie-menu--link">Nuestros productos</li>
+                    <li class="rodapie-menu--link">Anúncie aquí</li>
+                </ul>
+            </nav>
+            <form class="form-rodapie">
+                <h3 class="form-rodapie--titulo">Te escuchamos</h3>
+                <div class="inputs">
+                    <input data-tipo="name" class="inputs--input" type="text" placeholder="Tu nombre:" required
+                        pattern="([A-Za-z])\w+" title="Escribe solo letras.">
+                    <span class="input--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <textarea data-tipo="message" class="inputs--textarea" type="text" placeholder="Tu mensaje:"
+                        required></textarea>
+                    <span class="input--mensaje"></span>
+                </div>
+                <button class="form-rodapie--boton boton" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+        <section class="rodapie-info">
+            <p class="rodapie-info--parrafo">Desarrollado por: Juan Delgado</p>
+            <p class="rodapie-info--parrafo">Desarrollador Front-end</p>
+            <p class="rodapie-info--parrafo">2023</p>
+        </section>
+    </footer>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
+    "></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./controller/Usuario/login.controller.js" type="module"></script>
+</body>
+
+</html>
