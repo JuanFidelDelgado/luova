@@ -7,6 +7,7 @@ const categoria = document.querySelector('[data-categoria]');
 const obtenerCategoria = () => categoria.value;
 categoria.addEventListener('change', obtenerCategoria)
 
+
 formProducto.addEventListener('submit', async (e) => {
     e.preventDefault();
     const portada = document.querySelector('[data-imagen]').value;

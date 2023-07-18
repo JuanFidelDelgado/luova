@@ -1,10 +1,10 @@
+
 import { productosServicios } from '../../services/producto-services.js';
 import { sweetAlert } from '../../assets/js/sweetAlert.js';
 
 const cardsProducto = document.getElementById('cardsProducto');
 const templateProductos = document.getElementById('templateProductos').content;
 const fragment = document.createDocumentFragment();
-
 
 productosServicios.listaProductos().then((data) => {
     data.forEach(item => {
@@ -21,8 +21,6 @@ productosServicios.listaProductos().then((data) => {
     cardsProducto.appendChild(fragment);
 
 }).catch(() => alert('Salio un error'))
-
-
 
 cardsProducto.addEventListener('click', e => {
     e.preventDefault();

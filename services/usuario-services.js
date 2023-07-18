@@ -1,7 +1,7 @@
 const mostrarUsuarios = () =>
     fetch("https://apialurageek.onrender.com/usuario").then(resp => resp.json());
 
-const validarUsuario = () => {
+const validarUsuario = () =>{
     return fetch("https://apialurageek.onrender.com/usuario", {
         method: 'GET',
         headers: {
@@ -9,6 +9,8 @@ const validarUsuario = () => {
         },
     }).then(resp => resp.json());
 }
+
+
 
 export const usuarioServicios = {
     mostrarUsuarios,

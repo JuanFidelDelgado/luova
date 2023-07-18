@@ -5,6 +5,10 @@
   gap: 30px;
 }
 
+.rodapie-menu a {
+  text-decoration: none;
+}
+
 .rodapie-menu--link {
   color: var(--tertiary-color);
   font-size: var(--font-size-rodapie);

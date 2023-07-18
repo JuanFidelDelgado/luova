@@ -7,15 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luova | Joyería artesanal</title>
 
+    <!-- FUENTES DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
+    <!-- ICONOS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" type="text/css" href="./assets/css/base/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/base/base.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/base/variables.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/nav/nav.css">
@@ -27,7 +32,7 @@
 </head>
 
 <body>
-    <!--Sección para el logo animado-->
+    <!--Animación inicio-->
     <div id="loader-wrapper">
         <div id="loader"></div>
     </div>
@@ -35,6 +40,9 @@
     <audio id="sound" src="sound.mp3"></audio>
     <!--Fin-->
     <header>
+        <div>
+
+        </div>
         <nav class="nav">
             <section class="nav-contenido contenedor">
                 <a href="#"><img class="nav-logo" src="./assets/img/Luova_logo1.jpeg" alt="Logo Luova"></a>
@@ -54,11 +62,9 @@
         <section class="banner">
             <div class="banner-info contenedor">
                 <h1 class="banner-info--titulo">Somos artesanos, somos artistas...</h1>
-                <h2 class="banner-info--subtitulo">"Quien trabaja con sus manos, es un obrero.
-                    Quien trabaja con sus manos y su cabeza, es un artesano.
-                    Quien trabaja con sus manos, su cabeza y su corazón, es un artista."
-                    <br><br>San Francisco de Asís
-                </h2>
+                <h2 class="banner-info--subtitulo">"Quien trabaja con sus manos, es un obrero. Quien trabaja con sus
+                    manos y su cabeza, es un artesano. Quien trabaja con sus manos, su cabeza y su corazón, es un
+                    artista."<br><br>San Francisco de Asís</h2>
             </div>
             <div class="banner-wave">
                 <img src="./assets/img/wave.svg" alt="">
@@ -74,9 +80,9 @@
                         <i class="ri-arrow-right-line"></i></a>
                 </div>
 
-                <div class="categorias-cards" id="categoriaAretes"></div>
+                <div class="categorias-cards" id="categoriaShonen"></div>
 
-                <template id="templateAretes">
+                <template id="templateShonen">
                     <article class="categoria">
                         <img class="categoria--portada" src="./assets/img/onepice.webp" alt="One Piece" data-portada>
                         <h3 class="categoria--titulo" data-titulo>One Piece</h3>
@@ -97,9 +103,9 @@
                         <i class="ri-arrow-right-line"></i></a>
                 </div>
 
-                <div class="categorias-cards" id="categoriaCollares"></div>
+                <div class="categorias-cards" id="categoriaSeinen"></div>
 
-                <template id="templateCollares">
+                <template id="templateSeinen">
                     <article class="categoria">
                         <img class="categoria--portada" src="./assets/img/onepice.webp" alt="One Piece" data-portada>
                         <h3 class="categoria--titulo" data-titulo>One Piece</h3>
@@ -120,9 +126,9 @@
                     <a class="categorias-cabecera--vinculo" href="#">Ver todo <i class="ri-arrow-right-line"></i></a>
                 </div>
 
-                <div class="categorias-cards" id="categoriaAccesorios"></div>
+                <div class="categorias-cards" id="categoriaShoujo"></div>
 
-                <template id="templateAccesorios">
+                <template id="templateShoujo">
                     <article class="categoria">
                         <img class="categoria--portada" src="./assets/img/onepice.webp" alt="One Piece" data-portada>
                         <h3 class="categoria--titulo" data-titulo>One Piece</h3>

@@ -1,12 +1,12 @@
 import { productosServicios } from '../../services/producto-services.js';
 
-const listaAretes = document.getElementById('categoriaAretes');
-const listaCollares = document.getElementById('categoriaCollares');
-const listaAccesorios = document.getElementById('categoriaAccesorios');
+const listaShonen = document.getElementById('categoriaShonen');
+const listaSeinen = document.getElementById('categoriaSeinen');
+const listaShoujo = document.getElementById('categoriaShoujo');
 
-const templateAretes = document.getElementById('templateAretes').content;
-const templateCollares = document.getElementById('templateCollares').content;
-const templateAccesorios = document.getElementById('templateAccesorios').content;
+const templateShonen = document.getElementById('templateShonen').content;
+const templateSeinen = document.getElementById('templateSeinen').content;
+const templateShoujo = document.getElementById('templateShoujo').content;
 const fragment = document.createDocumentFragment();
 
 
@@ -19,12 +19,12 @@ const listarProductos = (template, lista, categoria) => {
         for (let index = 0; index < 7; index++) {
             const element = filtrar_categoria[index];
             if (!(element === undefined)) {
-                template.querySelector('[data-portada]').setAttribute('src', element.portada);
+                template.querySelector('[data-portada]').setAttribute('src',element.portada);
                 template.querySelector('[data-titulo]').textContent = element.titulo;
                 template.querySelector('[data-precio] span').textContent = element.precio;
                 template.querySelector('[data-id] span').textContent = element.id;
                 template.querySelector('[data-detalle]').dataset.id = element.id;
-
+                
                 const clone = template.cloneNode(true);
                 fragment.appendChild(clone);
             }
@@ -33,13 +33,13 @@ const listarProductos = (template, lista, categoria) => {
     }).catch((error) => console.log(error));
 }
 
-listarProductos(templateAretes, listaAretes, 'Aretes');
-listarProductos(templateCollares, listaCollares, 'Collares');
-listarProductos(templateAccesorios, listaAccesorios, 'Accesorios');
+listarProductos(templateShonen, listaShonen, 'shonen');
+listarProductos(templateSeinen, listaSeinen, 'seinen');
+listarProductos(templateShoujo, listaShoujo, 'shoujo');
 
 contenedorProductos.addEventListener('click', e => {
     if (e.target.dataset.detalle == "detalle") {
         const id = e.target.dataset.id;
-        window.location.href = '../detalle-producto.html?id=' + id;
+        window.location.href ='../detalle-producto.html?id='+id;
     }
 })

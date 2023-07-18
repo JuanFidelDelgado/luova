@@ -1,7 +1,9 @@
 .productos-cabecera {
   display: flex;
-  flex-direction: column;
-  row-gap: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 5px;
   margin-bottom: 16px;
 }
 
@@ -21,7 +23,7 @@
   align-items: center;
   justify-content: center;
   gap: 2px;
-  width: 170px;
+  width: 150px;
   height: 40px;
 }
 

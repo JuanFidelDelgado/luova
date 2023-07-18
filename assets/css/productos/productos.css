@@ -5,8 +5,17 @@
   margin: 40px auto;
 }
 
+.productos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
 @media (min-width: 992px) {
   .productos {
-    margin: 71px auto;
+    margin: 70px auto;
   }
 }

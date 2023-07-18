@@ -10,6 +10,19 @@
   outline: none;
 }
 
+input[type="file"] {
+  display: none;
+}
+
+.inputs--file::after {
+  content: 'Ningún archivo seleccionado';
+  position: absolute;
+  top: 8px;
+  left: 90px;
+  /* Ajusta esto según tus necesidades */
+  pointer-events: none;
+}
+
 .inputs--input {
   height: 56px;
   padding-inline: 10px;
