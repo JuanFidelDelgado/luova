@@ -18,9 +18,9 @@
   object-fit: cover;
 }
 
-.categoria--titulo {
+.categoria--nombre {
   color: var(--tertiary-color);
-  font-size: var(--font-size-card-titulo);
+  font-size: var(--font-size-card-nombre);
   font-weight: 500;
 }
 

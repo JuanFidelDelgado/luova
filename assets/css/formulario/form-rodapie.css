@@ -4,8 +4,8 @@
   width: 100%;
 }
 
-.form-rodapie--titulo {
-  font-family: var(--font-titulo);
+.form-rodapie--nombre {
+  font-family: var(--font-nombre);
   font-size: 1.9rem;
   color: var(--secundary-color);
   font-weight: 700;

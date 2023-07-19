@@ -15,10 +15,10 @@
   margin: 20px auto;
 }
 
-.form-login--titulo {
-  font-family: var(--font-titulo);
+.form-login--nombre {
+  font-family: var(--font-nombre);
   color: var(--secundary-color);
-  font-size: var(--font-size-titulo);
+  font-size: var(--font-size-nombre);
   text-align: center;
   margin-bottom: 16px;
 }
@@ -45,7 +45,7 @@
     width: 423px;
   }
 
-  .form-login--titulo {
+  .form-login--nombre {
     margin-bottom: 25px;
   }
 

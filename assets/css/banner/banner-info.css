@@ -3,15 +3,15 @@
   transform: translateY(120px);
 }
 
-.banner-info--titulo {
-  font-family: var(--font-titulo);
-  font-size: var(--font-size-banner-titulo);
+.banner-info--nombre {
+  font-family: var(--font-nombre);
+  font-size: var(--font-size-banner-nombre);
   margin-bottom: 0px;
 }
 
-.banner-info--subtitulo {
+.banner-info--subnombre {
   font-weight: 300;
-  font-size: var(--font-size-banner-subtitulo);
+  font-size: var(--font-size-banner-subnombre);
   margin-bottom: 8px;
 }
 
@@ -26,8 +26,8 @@
     transform: translateY(170px);
   }
 
-  .banner-info--titulo,
-  .banner-info--subtitulo {
+  .banner-info--nombre,
+  .banner-info--subnombre {
     margin-bottom: 16px;
   }
 }
@@ -37,13 +37,13 @@
     transform: translateY(150px);
   }
 
-  .banner-info--titulo {
-    font-size: var(--font-size-banner-titulo);
+  .banner-info--nombre {
+    font-size: var(--font-size-banner-nombre);
   }
 
-  .banner-info--subtitulo {
+  .banner-info--subnombre {
     font-weight: 600;
-    font-size: var(--font-size-banner-subtitulo);
+    font-size: var(--font-size-banner-subnombre);
     margin-bottom: 8px;
   }
 }

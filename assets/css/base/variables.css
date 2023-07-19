@@ -10,12 +10,12 @@
 
   /* Fuentes */
   --font-parrafos: "Raleway", sans-serif;
-  --font-titulo: Courgette;
+  --font-nombre: Courgette;
 
   /* Tamaños de fuentes*/
-  --font-size-banner-titulo: 2.7rem;
-  --font-size-banner-subtitulo: 1.4rem;
-  --font-size-titulo: 2.2rem;
+  --font-size-banner-nombre: 2.7rem;
+  --font-size-banner-subnombre: 1.4rem;
+  --font-size-nombre: 2.2rem;
   --font-size-button: 1.4rem;
   --font-size-vinculo: 1.4rem;
   --font-size-rodapie: 1.6rem;
@@ -23,8 +23,8 @@
   --font-size-card-precio: 1.6rem;
   --font-size-card-vinculo: 1.6rem;
   --font-size-card-id: 1.3rem;
-  --font-size-form-titulo: 2rem;
-  --font-size-detalle-titulo: 2.2rem;
+  --font-size-form-nombre: 2rem;
+  --font-size-detalle-nombre: 2.2rem;
   --font-size-detalle-descripcion: 1.4rem;
   --font-size-input: 1.6rem;
   --font-size-error: 1.4rem;
@@ -36,21 +36,21 @@
 
 @media (min-width: 768px) {
   :root {
-    --font-size-banner-titulo: 4.0rem;
-    --font-size-banner-subtitulo: 2.0rem;
+    --font-size-banner-nombre: 4.0rem;
+    --font-size-banner-subnombre: 2.0rem;
     --font-size-card-vinculo: 1.6rem;
-    --font-size-titulo: 4.0rem;
+    --font-size-nombre: 4.0rem;
   }
 }
 
 @media (min-width: 992px) {
   :root {
-    --font-size-banner-titulo: 6.5rem;
+    --font-size-banner-nombre: 6.5rem;
     --font-size-button: 1.6rem;
-    --font-size-titulo: 6.0rem;
+    --font-size-nombre: 6.0rem;
     --font-size-vinculo: 1.6rem;
-    --font-size-form-titulo: 2.2rem;
-    --font-size-detalle-titulo: 5.2rem;
+    --font-size-form-nombre: 2.2rem;
+    --font-size-detalle-nombre: 5.2rem;
     --font-size-detalle-descripcion: 1.6rem;
   }
 }

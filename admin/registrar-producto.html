@@ -58,14 +58,14 @@
     <main>
         <section class="form contenedor">
             <form class="form-producto" data-form>
-                <h1 class="form-producto--titulo">Agregar nuevo producto</h1>
+                <h1 class="form-producto--nombre">Agregar nuevo producto</h1>
                 <div class="inputs">
                     <input class="inputs--file" type="file" id="imagen" name="imagen" accept="image/*" data-imagen
                         required>
                     <span class="formulario--mensaje"></span>
                 </div>
                 <div class="inputs">
-                    <input name="titulo" class="inputs--input" type="text" placeholder="Nombre del producto" data-titulo
+                    <input name="nombre" class="inputs--input" type="text" placeholder="Nombre del producto" data-nombre
                         required>
                     <span class="formulario--mensaje"></span>
                 </div>
@@ -104,7 +104,7 @@
                 </ul>
             </nav>
             <form class="form-rodapie">
-                <h3 class="form-rodapie--titulo">Hable con nosotros</h3>
+                <h3 class="form-rodapie--nombre">Hable con nosotros</h3>
                 <div class="inputs">
                     <input data-tipo="name" class="inputs--input" type="text" placeholder="Nombre:" required
                         pattern="([A-Za-z])\w+" title="Escribe solo letras.">
@@ -128,11 +128,24 @@
         integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
         "></script>
 
-    <script src="../assets/js/index.js"></script>
-    <script src="../controller/Producto/registrar.controller.js" type="module"></script>
+    <script>
+        //Funcionalidad del scroll en el header
+        const header = document.querySelector('.nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add("nav-scrolled");
+            } else if (window.scrollY <= 50) {
+                header.classList.remove("nav-scrolled");
+            }
+        })
+    </script>
+    <script type="module" src="../controller/Producto/registro.controller.js"></script>
+    <!--<script src="../controller/Producto/registrar.controller.js" type="module"></script>-->
 </body>
 
 </html>

@@ -21,7 +21,7 @@ const obtenerProducto = async () => {
 
         templateDetaProducto.querySelector('[data-imagen]').setAttribute('src', producto.portada);
         templateDetaProducto.querySelector('[data-cover]').setAttribute('src', producto.portada);
-        templateDetaProducto.querySelector('[data-titulo]').textContent = producto.titulo;
+        templateDetaProducto.querySelector('[data-nombre]').textContent = producto.nombre;
         templateDetaProducto.querySelector('[data-precio] span').textContent = producto.precio;
         templateDetaProducto.querySelector('[data-descripcion]').textContent = producto.descripcion;
 
@@ -49,9 +49,9 @@ const ProductosSimilares = (categoria) => {
             const element = filtrar_categoria[index];
             if (!(element === undefined)) {
                 templateListaProductos.querySelector('[data-portada]').setAttribute('src', element.portada);
-                templateListaProductos.querySelector('[data-titulo]').textContent = element.titulo;
+                templateListaProductos.querySelector('[data-nombre]').textContent = element.nombre;
                 templateListaProductos.querySelector('[data-precio] span').textContent = element.precio;
-                templateListaProductos.querySelector('[data-titulo]').textContent = element.titulo;
+                templateListaProductos.querySelector('[data-nombre]').textContent = element.nombre;
                 templateListaProductos.querySelector('[data-detalle]').dataset.id = element.id;
 
                 const clone = templateListaProductos.cloneNode(true);

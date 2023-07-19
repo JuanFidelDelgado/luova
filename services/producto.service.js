@@ -1,6 +1,4 @@
 //Este archivo se encarga de la comunicación con el servidor
-//Manejo con Fetch API
-const listaProductos = () => fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
 
 /*Manejo con promesas original
 const listaProductos = () => {
@@ -23,6 +21,21 @@ const listaProductos = () => {
 };
 */
 
+//Manejo con Fetch API
+const listaProductos = () => fetch("http://localhost:3000/productos").then((respuesta) => respuesta.json());
+
+//Función para crear productos
+const registrarProducto = (portada, nombre, categoria, precio, descripcion) => {
+    return fetch("http://localhost:3000/productos", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ portada, nombre, categoria, precio, descripcion, id: uuid.v4() })
+    })
+}
+
 export const productoServices = {
     listaProductos,
+    registrarProducto,
 };

@@ -19,12 +19,12 @@ const listarProductos = (template, lista, categoria) => {
         for (let index = 0; index < 7; index++) {
             const element = filtrar_categoria[index];
             if (!(element === undefined)) {
-                template.querySelector('[data-portada]').setAttribute('src',element.portada);
-                template.querySelector('[data-titulo]').textContent = element.titulo;
+                template.querySelector('[data-portada]').setAttribute('src', element.portada);
+                template.querySelector('[data-nombre]').textContent = element.nombre;
                 template.querySelector('[data-precio] span').textContent = element.precio;
                 template.querySelector('[data-id] span').textContent = element.id;
                 template.querySelector('[data-detalle]').dataset.id = element.id;
-                
+
                 const clone = template.cloneNode(true);
                 fragment.appendChild(clone);
             }
@@ -40,6 +40,6 @@ listarProductos(templateShoujo, listaShoujo, 'shoujo');
 contenedorProductos.addEventListener('click', e => {
     if (e.target.dataset.detalle == "detalle") {
         const id = e.target.dataset.id;
-        window.location.href ='../detalle-producto.html?id='+id;
+        window.location.href = '../detalle-producto.html?id=' + id;
     }
 })

@@ -9,7 +9,7 @@ const fragment = document.createDocumentFragment();
 productosServicios.listaProductos().then((data) => {
     data.forEach(item => {
         templateProductos.querySelector('[data-portada]').setAttribute('src', item.portada);
-        templateProductos.querySelector('[data-titulo]').textContent = item.titulo;
+        templateProductos.querySelector('[data-nombre]').textContent = item.nombre;
         templateProductos.querySelector('[data-precio] span').textContent = item.precio;
         templateProductos.querySelector('[data-id] span').textContent = item.id;
         templateProductos.querySelector('[data-detalle]').textContent = item.descripcion;

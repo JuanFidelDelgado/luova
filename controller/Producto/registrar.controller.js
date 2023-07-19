@@ -11,7 +11,7 @@ categoria.addEventListener('change', obtenerCategoria)
 formProducto.addEventListener('submit', async (e) => {
     e.preventDefault();
     const portada = document.querySelector('[data-imagen]').value;
-    const titulo = document.querySelector('[data-titulo]').value;
+    const nombre = document.querySelector('[data-nombre]').value;
     const categoria = obtenerCategoria();
     const precio = document.querySelector('[data-precio]').value;
     const descripcion = document.querySelector('[data-descripcion]').value;
@@ -19,7 +19,7 @@ formProducto.addEventListener('submit', async (e) => {
     const confirmacion = await sweetAlert
         .mensaje("Producto agregado correctamente", "success", "#b8c995")
     if (confirmacion) {
-        productosServicios.crearProductos(portada, titulo, categoria, precio, descripcion)
+        productosServicios.crearProductos(portada, nombre, categoria, precio, descripcion)
             .then(() => {
                 /*window.location.href = "../../lista-productos.html";*/
                 window.location.href = "../../admin/admin.html";

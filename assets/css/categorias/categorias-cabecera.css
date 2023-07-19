@@ -5,9 +5,9 @@
   margin-bottom: 16px;
 }
 
-.categorias-cabecera--titulo {
-  font-family: var(--font-titulo);
-  font-size: var(--font-size-titulo);
+.categorias-cabecera--nombre {
+  font-family: var(--font-nombre);
+  font-size: var(--font-size-nombre);
   color: var(--secundary-color);
 }
 

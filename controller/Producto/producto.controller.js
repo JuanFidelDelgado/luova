@@ -1,11 +1,11 @@
 import { productoServices } from "../../services/producto.service.js";
 
-const crearNuevaLinea = (portada, titulo, categoria, precio, descripcion, id) => {
+const crearNuevaLinea = (portada, nombre, categoria, precio, descripcion, id) => {
     const linea = document.createElement("div")
     const contenido =
         `<div class="producto" data-producto>
             <img class="producto--portada" src="${portada}" alt="Aqui va la imagen" data-portada>
-            <h2 class="producto--titulo" data-titulo>${titulo}</h2>
+            <h2 class="producto--nombre" data-nombre>${nombre}</h2>
             <p class="producto--categoria" data-categoria>${categoria}</p>
             <p class="producto--precio" data-precio>$<span>${precio}</span></p>
             <p class="producto--id" data-id>#<span>${id}</span></p>
@@ -23,7 +23,7 @@ const div = document.querySelector("[data-producto]")
 
 productoServices.listaProductos().then((data) => {
     data.forEach((productos) => {
-        const nuevaLinea = crearNuevaLinea(productos.portada, productos.titulo, productos.categoria, productos.precio, productos.descripcion, productos.id);
+        const nuevaLinea = crearNuevaLinea(productos.portada, productos.nombre, productos.categoria, productos.precio, productos.descripcion, productos.id);
         div.appendChild(nuevaLinea);
     });
 })

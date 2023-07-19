@@ -7,10 +7,10 @@
   margin-bottom: 16px;
 }
 
-.productos-cabecera--titulo {
-  font-family: var(--font-titulo);
+.productos-cabecera--nombre {
+  font-family: var(--font-nombre);
   color: var(--secundary-color);
-  font-size: var(--font-size-titulo);
+  font-size: var(--font-size-nombre);
 }
 
 .productos-cabecera--boton {

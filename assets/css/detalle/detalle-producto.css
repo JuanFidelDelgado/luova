@@ -16,9 +16,9 @@
   gap: 8px;
 }
 
-.detalle-producto--titulo {
-  font-family: var(--font-titulo);
-  font-size: var(--font-size-detalle-titulo);
+.detalle-producto--nombre {
+  font-family: var(--font-nombre);
+  font-size: var(--font-size-detalle-nombre);
 }
 
 .detalle-producto--precio {
