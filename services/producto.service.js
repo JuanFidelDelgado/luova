@@ -35,7 +35,34 @@ const registrarProducto = (portada, nombre, categoria, precio, descripcion) => {
     })
 }
 
+//Función para eliminar el producto según el id
+const eliminarProducto = (id) => {
+    console.log("Eliminar a ", id)
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: "DELETE"
+    })
+}
+
+//Función para obtener los datos del producto para editar
+const detalleProducto = (id) => {
+    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => respuesta.json());
+};
+
+const editarProducto = (portada, nombre, categoria, precio, descripcion, id) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ portada, nombre, categoria, precio, descripcion })
+    }).then(respuesta => respuesta)
+        .catch((err) => console.log(err));
+};
+
 export const productoServices = {
     listaProductos,
     registrarProducto,
+    eliminarProducto,
+    detalleProducto,
+    editarProducto
 };

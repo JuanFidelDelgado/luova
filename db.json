@@ -10,19 +10,11 @@
     },
     {
       "portada": "../assets/img/FruitsBasket.webp",
-      "nombre": "Nombre",
+      "nombre": "Nombre4",
       "categoria": "Aretes",
-      "precio": "600",
-      "descripcion": "Desc",
+      "precio": "4000",
+      "descripcion": "Desc4",
       "id": "c4384e4f-1c4e-45be-8b15-735ecba1bb3b"
-    },
-    {
-      "portada": "../assets/img/kingdom.jpg",
-      "nombre": "Nombrecito",
-      "categoria": "Aretes",
-      "precio": "600",
-      "descripcion": "Descu",
-      "id": "0a1e1780-2646-4365-8f48-d538542507bd"
     }
   ],
   "usuario": [
