@@ -37,7 +37,6 @@ const registrarProducto = (portada, nombre, categoria, precio, descripcion) => {
 
 //Función para eliminar el producto según el id
 const eliminarProducto = (id) => {
-    console.log("Eliminar a ", id)
     return fetch(`http://localhost:3000/productos/${id}`, {
         method: "DELETE"
     })
