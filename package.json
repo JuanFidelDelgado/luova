@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "build": "mkdir -p dist && cp index.html dist/ && cp -r assets dist/ && cp -r controller dist/ && cp -r productos dist/ && cp -r services dist/ && cp login.html dist/",
+        "build": "mkdir -p dist && cp index.html dist/ && cp -r assets dist/ && cp -r controller dist/ && cp -r productos dist/ && cp -r services dist/ && cp login.html dist/ && cp db.json dist/",
         "test": "echo \"No test specified\" && exit 1",
         "start": "node index.js"
     },
