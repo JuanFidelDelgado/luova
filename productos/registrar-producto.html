@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luova | Registrar producto</title>
+    <!-- FUENTES DE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <!-- ICONOS REMIX -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- ESTILOS DE LA PÁGINA -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/base/base.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav/nav.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/portada.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formulario/form-producto.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formulario/inputs.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/rodapie/rodapie.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formulario/form-rodapie.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <section class="nav-contenido contenedor">
+                <a href="../index.html"><img class="nav-logo" src="../assets/img/Luova_logo1.jpeg" alt="Logo"></a>
+                <div class="nav-grupo">
+                    <a href="../index.html" class="nav-boton nav-boton--administrador">
+                        <i class="ri-login-box-line"></i>Salir
+                    </a>
+                    <a href="./listar-productos.html" class="nav-boton nav-boton--administrador">
+                        <i class="ri-luggage-cart-fill"></i>Productos
+                    </a>
+                    <form class="nav-buscar">
+                        <input class="nav-buscar--input" type="search" placeholder="buscar">
+                        <a class="nav-buscar--btn" href="#">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </form>
+                </div>
+            </section>
+        </nav>
+        <section class="portada">
+            <img class="portada--img" src="../assets/img/banner_productos.jpg" alt="portada de productos">
+        </section>
+    </header>
+
+    <main>
+        <section class="form contenedor">
+            <form class="form-producto" data-form>
+                <h1 class="form-producto--nombre">Agregar nuevo producto</h1>
+                <div class="inputs">
+                    <input class="inputs--file" type="file" id="imagen" name="imagen" accept="image/*" data-imagen
+                        required>
+                    <span class="formulario--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <input name="nombre" class="inputs--input" type="text" placeholder="Nombre del producto" data-nombre
+                        required>
+                    <span class="formulario--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <select id="categoria" class="inputs--input" name="select" data-categoria required>
+                        <option value="">Escoja una categoría</option>
+                        <option value="Aretes">Aretes</option>
+                        <option value="Collares">Collares</option>
+                        <option value="Accesorios">Accesorios</option>
+                    </select>
+                    <span class="formulario--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <input name="precio" class="inputs--input" type="text" placeholder="Precio del producto" data-precio
+                        required>
+                    <span class="formulario--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <textarea name="descripcion" class="inputs--textarea" type="text"
+                        placeholder="Descripción del producto:" data-descripcion></textarea>
+                    <span class="formulario--mensaje"></span>
+                </div>
+                <button class="form-producto--boton boton" type="submit">Agregar producto</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="rodapie contenedor">
+            <nav class="rodapie-menu">
+                <img class="rodapie-menu--logo" src="../assets/img/Luova_logo1.jpeg" alt="Logo">
+                <ul class="rodapie-menu--items">
+                    <li class="rodapie-menu--link">Quienes somos</li>
+                    <li class="rodapie-menu--link">Nuestras tiendas</li>
+                    <li class="rodapie-menu--link">Nuestros productos</li>
+                    <li class="rodapie-menu--link">Anúncie aquí</li>
+                </ul>
+            </nav>
+            <form class="form-rodapie">
+                <h3 class="form-rodapie--nombre">Hable con nosotros</h3>
+                <div class="inputs">
+                    <input data-tipo="name" class="inputs--input" type="text" placeholder="Nombre:" required
+                        pattern="([A-Za-z])\w+" title="Escribe solo letras.">
+                    <span class="input--mensaje"></span>
+                </div>
+                <div class="inputs">
+                    <textarea data-tipo="message" class="inputs--textarea" type="text" placeholder="Mensaje:"
+                        required></textarea>
+                    <span class="input--mensaje"></span>
+                </div>
+                <button class="form-rodapie--boton boton" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+        <section class="rodapie-info">
+            <p class="rodapie-info--parrafo">Desarrollado por: Juan Delgado</p>
+            <p class="rodapie-info--parrafo">Desarrollador Front-end</p>
+            <p class="rodapie-info--parrafo">2023</p>
+        </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
+        "></script>
+
+    <script>
+        //Funcionalidad del scroll en el header
+        const header = document.querySelector('.nav');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add("nav-scrolled");
+            } else if (window.scrollY <= 50) {
+                header.classList.remove("nav-scrolled");
+            }
+        })
+    </script>
+    <script type="module" src="../controller/Producto/registro.controller.js"></script>
+    <!--<script src="../controller/Producto/registrar.controller.js" type="module"></script>-->
+</body>
+
+</html>

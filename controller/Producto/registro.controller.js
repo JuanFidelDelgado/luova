@@ -16,7 +16,7 @@ formulario.addEventListener("submit", (evento) => {
     if (confirmacion) {
         productoServices.registrarProducto(portada, nombre, categoria, precio, descripcion)
             .then(() => {
-                window.location.href = "../../admin/admin.html";
+                window.location.href = "../../productos/listar-productos.html";
             }).catch((error) => console.log(error));
     }
 });

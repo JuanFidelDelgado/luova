@@ -1,4 +1,5 @@
-import { productosServicios } from './services/producto-services.js';
+/*import { productosServicios } from './services/producto-services.js';*/
+import { productoServices } from "../../services/producto.service.js";
 
 const detalleProducto = document.getElementById('detalleProducto');
 const listaProductos = document.getElementById('listaProductos');
@@ -15,7 +16,9 @@ const obtenerProducto = async () => {
     }
 
     try {
-        const producto = await productosServicios.detalleProducto(id);
+
+        const producto = await productoServices.detalleProducto(id);
+        /*const producto = await productosServicios.detalleProducto(id);*/
 
         const { categoria } = producto;
 
@@ -37,9 +40,8 @@ const obtenerProducto = async () => {
 
 obtenerProducto();
 
-
 const ProductosSimilares = (categoria) => {
-    productosServicios.listaProductos().then(data => {
+    productoServices.listaProductos().then(data => {
 
         const filtrar_categoria = data.filter(
             producto => producto.categoria == categoria
@@ -65,6 +67,6 @@ const ProductosSimilares = (categoria) => {
 listaProductos.addEventListener('click', e => {
     if (e.target.dataset.detalle == "detalle") {
         const id = e.target.dataset.id;
-        window.location.href = '../../detalle-producto.html?id=' + id;
+        window.location.href = '../../productos/detalle-producto.html?id=' + id;
     }
 })

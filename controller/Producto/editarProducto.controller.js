@@ -55,8 +55,22 @@ formulario.addEventListener("submit", async (evento) => {
     if (confirmacion) {
         productoServices.editarProducto(portada, nombre, categoria, precio, descripcion, id)
             .then(() => {
-                window.location.href = "../../admin/admin.html";
+                window.location.href = "../../productos/listar-productos.html";
             })
     }
-
 })
+
+function mensaje(title, icon) {
+    return new Promise(resolve => {
+        Swal.fire({
+            position: 'center',
+            icon,
+            title,
+            showConfirmButton: false,
+            timer: 1500,
+            timerProgressBar: true
+        }).then((result) => {
+            resolve(result);
+        })
+    })
+}

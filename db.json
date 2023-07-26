@@ -1,26 +1,42 @@
 {
   "productos": [
     {
-      "portada": "../assets/img/onepice.webp",
-      "nombre": "Tokyo Ghoul",
-      "categoria": "Aretes",
-      "precio": "12",
-      "descripcion": "Los habitantes de Tokio viven aterrados: en las sombras de la metrópolis se ocultan horribles monstruos que se camuflan entre la multitud, cazando y devorando seres humanos. Un joven se topa con uno de estos ghouls, pero aunque consigue sobrevivir, su existencia ya no será igual…",
-      "id": "687dc623-78f3-41e7-bea4-bb05334662fa"
+      "portada": "../assets/img/accesorio1.jpg",
+      "nombre": "Accesorio1",
+      "categoria": "Accesorios",
+      "precio": "1000",
+      "descripcion": "Accesorios Artesanales",
+      "id": "e813ee57-6258-439d-9c09-89c46a896301"
     },
     {
-      "portada": "../assets/img/FruitsBasket.webp",
-      "nombre": "Nombre5",
+      "portada": "../assets/img/accesorio2.jpg",
+      "nombre": "Accesorio2",
+      "categoria": "Accesorios",
+      "precio": "2000",
+      "descripcion": "Accesorios",
+      "id": "3680d7dd-cf17-4326-9cfd-a2f4790b97d8"
+    },
+    {
+      "portada": "../assets/img/accesorio3.jpg",
+      "nombre": "Accesorio3",
+      "categoria": "Accesorios",
+      "precio": "3000",
+      "descripcion": "Accesorios artesanales",
+      "id": "929d90d6-53fd-4289-8c47-977b6930e3e2"
+    },
+    {
+      "portada": "../assets/img/aretes1.jpg",
+      "nombre": "Aretes1",
       "categoria": "Aretes",
-      "precio": "5000",
-      "descripcion": "Desc5",
-      "id": "c4384e4f-1c4e-45be-8b15-735ecba1bb3b"
+      "precio": "1000",
+      "descripcion": "Aretes",
+      "id": "9e828878-17cb-4963-8e58-77f78a089c40"
     }
   ],
-  "usuario": [
+  "usuarios": [
     {
       "email": "user@gmail.com",
-      "password": "123"
+      "password": "1234"
     }
   ]
 }

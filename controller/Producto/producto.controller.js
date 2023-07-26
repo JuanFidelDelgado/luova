@@ -11,7 +11,7 @@ const crearNuevaLinea = (portada, nombre, categoria, precio, descripcion, id) =>
             <p class="producto--id" data-id>#<span>${id}</span></p>
             <div class="producto-controles">
                 <a href=""><i class="producto-controles--icon ri-delete-bin-2-fill" data-delete="delete" id=${id}></i></a>
-                <a href="../../admin/editar-producto.html?id=${id}"><i class="producto-controles--icon ri-pencil-fill" data-edit="edit" id=${id}></i></a>
+                <a href="../../productos/editar-producto.html?id=${id}"><i class="producto-controles--icon ri-pencil-fill" data-edit="edit" id=${id}></i></a>
             </div>
         </div>
         `;

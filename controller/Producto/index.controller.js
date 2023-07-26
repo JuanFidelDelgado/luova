@@ -1,4 +1,5 @@
-import { productosServicios } from '../../services/producto-services.js';
+/*import { productosServicios } from '../../services/producto.service.js';*/
+import { productoServices } from "../../services/producto.service.js";
 
 const listaShonen = document.getElementById('categoriaShonen');
 const listaSeinen = document.getElementById('categoriaSeinen');
@@ -13,7 +14,7 @@ const fragment = document.createDocumentFragment();
 const contenedorProductos = document.getElementById('contenedorProductos');
 
 const listarProductos = (template, lista, categoria) => {
-    productosServicios.listaProductos().then(data => {
+    productoServices.listaProductos().then(data => {
         const filtrar_categoria = data.filter(producto => producto.categoria == categoria);
 
         for (let index = 0; index < 7; index++) {
@@ -40,6 +41,6 @@ listarProductos(templateShoujo, listaShoujo, 'shoujo');
 contenedorProductos.addEventListener('click', e => {
     if (e.target.dataset.detalle == "detalle") {
         const id = e.target.dataset.id;
-        window.location.href = '../detalle-producto.html?id=' + id;
+        window.location.href = '../../productos/detalle-producto.html?id=' + id;
     }
 })
