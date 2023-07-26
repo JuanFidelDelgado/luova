@@ -21,7 +21,7 @@
       "nombre": "Accesorio3",
       "categoria": "Accesorios",
       "precio": "3000",
-      "descripcion": "Accesorios artesanales",
+      "descripcion": "Accesorios artesanales hecho a mano",
       "id": "929d90d6-53fd-4289-8c47-977b6930e3e2"
     },
     {
@@ -31,6 +31,22 @@
       "precio": "1000",
       "descripcion": "Aretes",
       "id": "9e828878-17cb-4963-8e58-77f78a089c40"
+    },
+    {
+      "portada": "../assets/img/aretes2.jpg",
+      "nombre": "Aretes2",
+      "categoria": "Aretes",
+      "precio": "2000",
+      "descripcion": "Aretes",
+      "id": "78994966-9a31-4c37-8209-419d877e02d2"
+    },
+    {
+      "portada": "C:\\fakepath\\aretes3.jpg",
+      "nombre": "Aretes3",
+      "categoria": "Aretes",
+      "precio": "3000",
+      "descripcion": "Aretes",
+      "id": "e8a9b565-eebd-404d-80a4-fc691a54bd21"
     }
   ],
   "usuarios": [
