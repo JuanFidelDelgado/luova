@@ -1,13 +1,13 @@
 /*import { productosServicios } from '../../services/producto.service.js';*/
 import { productoServices } from "../../services/producto.service.js";
 
-const listaShonen = document.getElementById('categoriaShonen');
-const listaSeinen = document.getElementById('categoriaSeinen');
-const listaShoujo = document.getElementById('categoriaShoujo');
+const listaAretes = document.getElementById('categoriaAretes');
+const listaCollares = document.getElementById('categoriaCollares');
+const listaAccesorios = document.getElementById('categoriaAccesorios');
 
-const templateShonen = document.getElementById('templateShonen').content;
-const templateSeinen = document.getElementById('templateSeinen').content;
-const templateShoujo = document.getElementById('templateShoujo').content;
+const templateAretes = document.getElementById('templateAretes').content;
+const templateCollares = document.getElementById('templateCollares').content;
+const templateAccesorios = document.getElementById('templateAccesorios').content;
 const fragment = document.createDocumentFragment();
 
 
@@ -34,9 +34,9 @@ const listarProductos = (template, lista, categoria) => {
     }).catch((error) => console.log(error));
 }
 
-listarProductos(templateShonen, listaShonen, 'shonen');
-listarProductos(templateSeinen, listaSeinen, 'seinen');
-listarProductos(templateShoujo, listaShoujo, 'shoujo');
+listarProductos(templateAretes, listaAretes, 'Aretes');
+listarProductos(templateCollares, listaCollares, 'Collares');
+listarProductos(templateAccesorios, listaAccesorios, 'Accesorios');
 
 contenedorProductos.addEventListener('click', e => {
     if (e.target.dataset.detalle == "detalle") {

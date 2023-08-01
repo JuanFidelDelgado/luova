@@ -1,4 +1,3 @@
-/*import { productosServicios } from './services/producto-services.js';*/
 import { productoServices } from "../../services/producto.service.js";
 
 const detalleProducto = document.getElementById('detalleProducto');
@@ -12,16 +11,12 @@ const obtenerProducto = async () => {
     const id = url.searchParams.get("id");
 
     if (id === null) {
-        console.log("Error");
+        console.log("Error en la información del producto");
     }
 
     try {
-
         const producto = await productoServices.detalleProducto(id);
-        /*const producto = await productosServicios.detalleProducto(id);*/
-
         const { categoria } = producto;
-
         templateDetaProducto.querySelector('[data-imagen]').setAttribute('src', producto.portada);
         templateDetaProducto.querySelector('[data-cover]').setAttribute('src', producto.portada);
         templateDetaProducto.querySelector('[data-nombre]').textContent = producto.nombre;

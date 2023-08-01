@@ -6,41 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luova | Detalle producto</title>
-
+    <!-- FUENTES DE GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Righteous&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 
     <!-- ICONOS REMIX -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- ESTILOS DE LA PÁGINA -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/base/base.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/base/variables.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/base/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/nav/nav.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/portada.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/categorias/categorias.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/categoria.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/detalle/detalle.css">
-
-    <link rel="stylesheet" type="text/css" href="./assets/css/formulario/form-rodapie.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/rodapie/rodapie.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/base/base.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/base/variables.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav/nav.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/portada.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formulario/form-producto.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/categoria.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/categorias/categorias-cabecera.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/categorias/categorias-cards.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/categorias/categorias.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/producto/producto.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/productos/productos-cabecera.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/rodapie/rodapie.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formulario/form-rodapie.css">
 </head>
 
 <body>
     <header>
         <nav class="nav">
             <section class="nav-contenido contenedor">
-                <a href="#"><img class="nav-logo" src="../assets/img/Luova_logo1.jpeg" alt="Logo Luova"></a>
+                <a href="#"><img class="nav-logo" src="../assets/img/Luova_logo1.jpeg" alt="Logo"></a>
                 <div class="nav-grupo">
-                    <a href="../index.html" class="nav-boton">
-                        <i class="ri-login-box-line"> </i> Salir
+                    <a href="../index.html" class="nav-boton nav-boton--administrador">
+                        <i class="ri-login-box-line"></i>Salir
+                    </a>
+                    <a href="./listar-productos.html" class="nav-boton nav-boton--administrador">
+                        <i class="ri-luggage-cart-fill"></i>Productos
                     </a>
                     <form class="nav-buscar">
-                        <input class="nav-buscar--input" type="search" placeholder="Buscar">
+                        <input class="nav-buscar--input" type="search" placeholder="buscar">
                         <a class="nav-buscar--btn" href="#">
                             <i class="ri-search-line"></i>
                         </a>
@@ -57,7 +64,8 @@
 
         <template id="templateDetaProducto">
             <picture class="detalle-banner">
-                <img src="./assets/img/naruto.webp" alt="imagen del producto" class="detalle-banner--img" data-imagen>
+                <img src="../assets/img/banner_productos.jpg" alt="imagen del producto" class="detalle-banner--img"
+                    data-imagen>
             </picture>
             <div class="detalle-producto contenedor">
                 <img src="./assets/img/naruto.webp" alt="imagen del producto" class="detalle-producto--cover"
@@ -78,26 +86,25 @@
 
             <div class="categorias-cards" id="listaProductos"></div>
 
-            <!--<template id="templateListaProductos">-->
-            <article class="categoria">
-                <img class="categoria--portada" src="./assets/img/onepice.webp" alt="One Piece" data-portada>
-                <h3 class="categoria--nombre" data-nombre>One Piece</h3>
-                <p class="categoria--precio" data-precio>$<span>60,00</span></p>
-                <p class="categoria--id" data-id>#<span>1</span>
-                </p>
-                <a class="categoria--vinculo" href="#" data-detalle="detalle"><i class="ri-book-2-fill"></i>Ver
-                    producto
-                </a>
-            </article>
-            <!--</template>-->
+            <template id="templateListaProductos">
+                <article class="categoria">
+                    <img class="categoria--portada" src="./assets/img/onepice.webp" alt="One Piece" data-portada>
+                    <h3 class="categoria--nombre" data-nombre>One Piece</h3>
+                    <p class="categoria--precio" data-precio>$<span>60,00</span></p>
+                    <p class="categoria--id" data-id>#<span>1</span>
+                    </p>
+                    <a class="categoria--vinculo" href="#" data-detalle="detalle"><i class="ri-book-2-fill"></i>Ver
+                        producto </a>
+                </article>
+            </template>
             </div>
         </section>
     </main>
 
     <footer>
         <section class="rodapie contenedor">
-            <nav class="rodapie-menu ">
-                <img class="rodapie-menu--logo" src="./assets/img/Luova_logo1.jpeg" alt="Logo">
+            <nav class="rodapie-menu">
+                <img class="rodapie-menu--logo" src="../assets/img/Luova_logo1.jpeg" alt="Logo">
                 <ul class="rodapie-menu--items">
                     <li class="rodapie-menu--link">Quienes somos</li>
                     <li class="rodapie-menu--link">Nuestras tiendas</li>
@@ -126,10 +133,11 @@
             <p class="rodapie-info--parrafo">2023</p>
         </section>
     </footer>
-
-
+    <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js
+        "></script>
     <script src="../assets/js/scroll.js"></script>
-    <script src="./controller/Producto/detalle.controller.js" type="module"></script>
+    <script type="module" src="../controller/Producto/detalle.controller.js"></script>
 </body>
 
 </html>

@@ -41,12 +41,36 @@
       "id": "78994966-9a31-4c37-8209-419d877e02d2"
     },
     {
-      "portada": "C:\\fakepath\\aretes3.jpg",
+      "portada": "../assets/img/aretes3.jpg",
       "nombre": "Aretes3",
       "categoria": "Aretes",
       "precio": "3000",
       "descripcion": "Aretes",
       "id": "e8a9b565-eebd-404d-80a4-fc691a54bd21"
+    },
+    {
+      "portada": "../assets/img/collar1.jpg",
+      "nombre": "Collar1",
+      "categoria": "Collares",
+      "precio": "1000",
+      "descripcion": "Collar",
+      "id": "3236a100-438d-45f3-9b7a-1793e4ac13d6"
+    },
+    {
+      "portada": "../assets/img/collar2.jpg",
+      "nombre": "Collar2",
+      "categoria": "Collares",
+      "precio": "2000",
+      "descripcion": "Collar",
+      "id": "de2ca538-dbbe-4207-9d70-41dc4aa184c6"
+    },
+    {
+      "portada": "../assets/img/collar3.jpg",
+      "nombre": "Collar3",
+      "categoria": "Collares",
+      "precio": "3000",
+      "descripcion": "Collar",
+      "id": "ec1bffa9-0feb-4fe7-b1eb-2859536e7df4"
     }
   ],
   "usuarios": [
