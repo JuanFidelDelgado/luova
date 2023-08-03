@@ -17,7 +17,7 @@ const obtenerProducto = async () => {
     try {
         const producto = await productoServices.detalleProducto(id);
         const { categoria } = producto;
-        templateDetaProducto.querySelector('[data-imagen]').setAttribute('src', producto.portada);
+        //templateDetaProducto.querySelector('[data-imagen]').setAttribute('src', producto.portada);
         templateDetaProducto.querySelector('[data-cover]').setAttribute('src', producto.portada);
         templateDetaProducto.querySelector('[data-nombre]').textContent = producto.nombre;
         templateDetaProducto.querySelector('[data-precio] span').textContent = producto.precio;

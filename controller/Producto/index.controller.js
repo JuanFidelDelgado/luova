@@ -1,4 +1,3 @@
-/*import { productosServicios } from '../../services/producto.service.js';*/
 import { productoServices } from "../../services/producto.service.js";
 
 const listaAretes = document.getElementById('categoriaAretes');
