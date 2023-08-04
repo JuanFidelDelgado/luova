@@ -1,7 +1,7 @@
 {
   "productos": [
     {
-      "portada": "../assets/img/accesorio1.jpg",
+      "portada": "https://morenacorazon.com/cdn/shop/articles/57.jpg?v=1623945907",
       "nombre": "Accesorio1",
       "categoria": "Accesorios",
       "precio": "1000",
