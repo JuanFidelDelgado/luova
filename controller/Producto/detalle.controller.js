@@ -64,4 +64,4 @@ listaProductos.addEventListener('click', e => {
         const id = e.target.dataset.id;
         window.location.href = '../../productos/detalle-producto.html?id=' + id;
     }
-})
+}, { once: true })

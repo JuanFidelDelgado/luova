@@ -24,7 +24,7 @@ formulario.addEventListener('submit', (e) => {
         }
     })
 
-})
+}, { once: true })
 
 
     // console.log(data[0]);

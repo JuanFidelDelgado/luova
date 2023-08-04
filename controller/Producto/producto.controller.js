@@ -21,7 +21,7 @@ const crearNuevaLinea = (portada, nombre, categoria, precio, descripcion, id) =>
         const id = btnEliminar.id;
         productoServices.eliminarProducto(id).then(respuesta => {
         }).catch(err => alert("Ocurrio el error: ", err))
-    });
+    }, { once: true });
 
     return linea;
 };

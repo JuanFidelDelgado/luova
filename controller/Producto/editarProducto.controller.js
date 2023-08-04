@@ -35,7 +35,7 @@ obtenerProducto();
 
 const categoria = document.querySelector('[data-categoria]');
 const obtenerCategoria = () => categoria.value;
-categoria.addEventListener('change', obtenerCategoria)
+categoria.addEventListener('change', obtenerCategoria, { once: true })
 
 formulario.addEventListener("submit", async (evento) => {
     evento.preventDefault();
@@ -58,7 +58,7 @@ formulario.addEventListener("submit", async (evento) => {
                 window.location.href = "../../productos/listar-productos.html";
             })
     }
-})
+}, { once: true })
 
 function mensaje(title, icon) {
     return new Promise(resolve => {

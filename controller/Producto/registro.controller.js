@@ -19,4 +19,4 @@ formulario.addEventListener("submit", (evento) => {
                 window.location.href = "../../productos/listar-productos.html";
             }).catch((error) => console.log(error));
     }
-});
+}, { once: true });
